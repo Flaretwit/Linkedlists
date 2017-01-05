@@ -1,6 +1,5 @@
 //Node.cpp
 #include "Node.h"
-#include "Student.h"
 
 using namespace std;
 
@@ -23,19 +22,16 @@ Node* Node::getNext() {
 	return this->next;	
 }
 
-Student* getStudent() {
+Student* Node::getStudent() {
 	return this->student;
 }
 
-void setNext(Node* node) {
+void Node::setNext(Node* node) {
 	this->next = node;
 }
 
-void setStudent(Student* student) {
+void Node::setStudent(Student* student) {
 	this->student = student;
-}
-Node* createNode(Student* student) {
-	return new Node(student);
 }
 
 

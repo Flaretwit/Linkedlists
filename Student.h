@@ -5,6 +5,9 @@
 class Student {
 	public:
 		Student();
+		Student(int id);
+		~Student();
+		int getId();
 	private:
 		int id;
 };
